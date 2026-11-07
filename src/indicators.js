@@ -1,0 +1,6 @@
+// UNIMARC/B 700, 701, 702 : blanc / forme du nom 0 ou 1.
+// Avec $b, la forme du nom doit être 1. Aucun choix automatique sans $b.
+const personal=tag=>['700','701','702'].includes(tag);
+export function validatePersonalIndicators(record){const issues=[];record.fields.forEach((f,index)=>{if(!personal(f.tag))return;const hasB=f.subfields?.some(s=>s.code==='b'&&s.value.trim());if(f.ind1!==' ')issues.push({index,severity:'error',message:`Zone ${f.tag} : le premier indicateur doit être un blanc.`});if(!['0','1'].includes(f.ind2))issues.push({index,severity:'error',message:`Zone ${f.tag} : deuxième indicateur « ${f.ind2} » invalide ; choisir 0 (ordre direct) ou 1 (nom de famille).${hasB?' La présence de $b impose 1.':''}`});else if(hasB&&f.ind2!=='1')issues.push({index,severity:'error',message:`Zone ${f.tag} : la présence de $b impose le deuxième indicateur 1.`});});return issues;}
+export function personalIndicatorRepairs(record){return record.fields.flatMap((f,index)=>personal(f.tag)&&f.ind2!=='1'&&f.subfields?.some(s=>s.code==='b'&&s.value.trim())&&!f.subfields?.some(s=>s.code==='d'&&s.value.trim())?[{index,tag:f.tag,from:f.ind2,to:'1'}]:[]);}
+export function repairPersonalIndicators(record){const changes=personalIndicatorRepairs(record);for(const c of changes)record.fields[c.index].ind2=c.to;return changes;}

@@ -1,0 +1,14 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {readISO2709} from '../src/iso-reader.js';
+import {encodeBatch} from '../src/marc.js';
+import {repairPersonalIndicators} from '../src/indicators.js';
+import assert from 'node:assert/strict';
+const [input,output]=process.argv.slice(2);
+if(!input||!output||input===output)throw Error('Indiquez un fichier source et un fichier de sortie distincts.');
+const records=readISO2709(new Uint8Array(await readFile(input))),original=structuredClone(records),corrections=[];
+records.forEach((r,index)=>{const changes=repairPersonalIndicators(r);for(const c of changes)original[index].fields[c.index].ind2='1';corrections.push({record:index+1,changes});});
+assert.deepEqual(records,original);
+const bytes=encodeBatch(records);
+assert.deepEqual(readISO2709(bytes).map(r=>r.fields),records.map(r=>r.fields));
+await writeFile(output,bytes,{flag:'wx'});
+console.log(JSON.stringify({records:records.length,corrections,output},null,2));
