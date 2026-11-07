@@ -2,7 +2,7 @@
 
 ## Résultats exécutés
 
-`npm test` : 11 tests automatisés réussis. `tests/browser.cjs` : 8 scénarios réussis dans Chromium, aucune erreur JavaScript ; captures bureau et mobile examinées. `tests/feasibility.cjs` : requêtes réseau BnF réelles depuis une origine HTTP locale. Relecture externe : pymarc 5.4.0, toutes les zones et accents du fichier pilote comparés aux objets sources, sans différence.
+`npm test` : 12 tests automatisés réussis. `tests/browser.cjs` : 8 scénarios réussis dans Chromium, aucune erreur JavaScript ; captures bureau et mobile examinées. `tests/feasibility.cjs` : requêtes réseau BnF réelles depuis une origine HTTP locale. Relecture externe : pymarc 5.4.0, toutes les zones et accents du fichier pilote comparés aux objets sources, sans différence.
 
 Les notices utilisées pour la preuve sont réelles ; les données de création manuelle des tests sont des jeux synthétiques explicites, jamais des réponses du service BnF. Aucun cache de fausses réponses n’est intégré à l’interface.
 
@@ -33,7 +33,11 @@ Les notices utilisées pour la preuve sont réelles ; les données de création 
 
 La BnF renvoie des notices avec label décalé et des valeurs 100$a de longueur atypique. L’anomalie du label est documentée par la BnF. L’application conserve ces données mais exige une correction explicite si le type en position 6 manque ; elle avertit sur la longueur du 100. La sérialisation correcte ne garantit pas la qualité bibliographique de la source.
 
-L’accès direct BnF depuis l’origine locale fonctionne. Le déploiement public et les requêtes depuis son origine nécessitent une vérification séparée, consignée après publication si celle-ci est disponible.
+L’accès direct BnF fonctionne depuis l’origine locale et depuis le site public GitHub Pages. Recette publique le 7 novembre 2026 : HTTP 200, zéro erreur JavaScript, ISBN-13 équivalent : 1 notice, ARK : 1 notice, Titre/Auteur/Date : 2 notices. Le workflow GitHub Actions a terminé avec succès. Aucun relais API n’est nécessaire dans ces conditions observées.
+
+Application : https://didierthebault-web.github.io/super-bibliothecaire/
+
+Dépôt : https://github.com/didierthebault-web/super-bibliothecaire
 
 ## Vérifications restant à faire avant usage professionnel
 

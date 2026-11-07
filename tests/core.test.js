@@ -1,12 +1,13 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {createRecord,normalizeISBN,normalizeARK,validate,encodeBatch,duplicates,setARK,provisional,clone} from '../src/marc.js';
+import {createRecord,normalizeISBN,equivalentISBN,normalizeARK,validate,encodeBatch,duplicates,setARK,provisional,clone} from '../src/marc.js';
 import {readISO2709} from '../src/iso-reader.js';
 import {buildQuery} from '../src/bnf.js';
 import {checkBackup} from '../src/storage.js';
 import {checkProfile,isRequested} from '../src/profile.js';
 function record(){const r=createRecord();r.fields=[{tag:'003',value:'https://catalogue.bnf.fr/ark:/12148/cb38499612v'},{tag:'200',ind1:'1',ind2:' ',subfields:[{code:'a',value:'Été à l’Île : cœur et mémoire'},{code:'f',value:'Zoë Noël'}]},...Array.from({length:30},(_,i)=>({tag:'606',ind1:' ',ind2:' ',subfields:[{code:'a',value:'Sujet répété '+i},{code:'x',value:'Histoire culturelle'}]}))];return r;}
 test('ISBN 10 et 13 : normalisation, contrôle et rejet',()=>{assert.equal(normalizeISBN('978-2-07-036002-4'),'9782070360024');assert.equal(normalizeISBN('2 07 036002 4'),'2070360024');assert.equal(normalizeISBN('080442957X'),'080442957X');for(const s of ['9782070360025','2070360025','123','9782070360024<script>'])assert.throws(()=>normalizeISBN(s));});
+test('ISBN équivalents 10/13 et label source décalé',()=>{assert.equal(equivalentISBN('9782070360024'),'2070360024');assert.equal(equivalentISBN('2070360024'),'9782070360024');const r=record();r.leader='     a    22        450 ';assert(validate(r).some(i=>i.severity==='error'&&i.message.includes('position 6')));assert.throws(()=>encodeBatch([r]));});
 test('ARK équivalents et rejet des autorités ou URL externes',()=>{for(const x of ['cb38499612v','ark:/12148/cb38499612v','https://catalogue.bnf.fr/ark:/12148/cb38499612v'])assert.equal(normalizeARK(x),'https://catalogue.bnf.fr/ark:/12148/cb38499612v');assert.throws(()=>normalizeARK('https://evil.test/ark:/12148/cb38499612v'));assert.throws(()=>normalizeARK('ark:/12148/ca123'));});
 test('pas de 001 automatique ; 003 unique',()=>{const r=createRecord();assert(!r.fields.some(f=>f.tag==='001'));r.fields=[{tag:'003',value:'old'},{tag:'003',value:'duplicate'}];setARK(r,'new');assert.deepEqual(r.fields,[{tag:'003',value:'new'}]);});
 test('ISO 2709 : accents, répétitions, contrôles et sous-zones préservés',()=>{const original=record(),second=clone(original);second.id=crypto.randomUUID();second.fields.push({tag:'700',ind1:' ',ind2:'1',subfields:Array.from({length:40},(_,i)=>({code:'a',value:'Responsabilité '+i}))});const encoded=encodeBatch([original,second]),decoded=readISO2709(encoded);assert.equal(decoded.length,2);assert.deepEqual(decoded.map(r=>r.fields),[original.fields,second.fields]);assert.equal(encoded.at(-1),29);assert.deepEqual(original.fields,record().fields);});

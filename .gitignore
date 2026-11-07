@@ -7,3 +7,8 @@ docs/browser-results.json
 tests/pilote-bnf.mrc
 tests/bnf-*.json
 docs/faisabilite.json
+references/
+scripts/publish-github.cjs
+tests/browser-backup.json
+tests/browser-export.mrc
+docs/public-check.json

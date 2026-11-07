@@ -2,6 +2,8 @@
 
 Votre assistante au catalogage UNIMARC. Application publique en français, sans compte, avec recherche réelle dans le catalogue général de la BnF, édition structurée, stockage IndexedDB et export ISO 2709 `.mrc`.
 
+Application en ligne : https://didierthebault-web.github.io/super-bibliothecaire/
+
 ## Utilisation et développement
 
 Node.js 22 ou ultérieur, sans installation de dépendances pour l’application :
@@ -28,7 +30,7 @@ Les règles obligatoires définitives restent à définir dans les paramètres. 
 
 Le workflow `.github/workflows/pages.yml` exécute les tests, copie uniquement `index.html`, `src/` et `assets/`, puis publie l’artefact statique. Dans GitHub : Settings → Pages → Source : GitHub Actions. Les chemins sont relatifs et fonctionnent sous `/super-bibliothecaire/`.
 
-Aucun serveur, secret, compte utilisateur ou base centrale n’est nécessaire. L’accès CORS BnF a été testé depuis une origine HTTP locale ; l’accès depuis l’URL publique doit également être vérifié après déploiement. Aucun connecteur tiers obligatoire ni relais n’a été ajouté.
+Aucun serveur, secret, compte utilisateur ou base centrale n’est nécessaire. L’accès CORS BnF a été testé depuis une origine HTTP locale et depuis l’URL GitHub Pages publique : les trois modes répondent avec des notices réelles. Aucun connecteur tiers obligatoire ni relais n’a été ajouté.
 
 ## Vérifications et limites
 
