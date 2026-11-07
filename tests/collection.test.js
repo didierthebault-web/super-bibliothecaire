@@ -1,0 +1,6 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {createRecord,validate,encodeRecord,clone} from '../src/marc.js';
+import {personalIndicatorRepairs} from '../src/indicators.js';
+test('225 : indicateur de collection non déterminé bloqué, jamais inféré à partir de 410',()=>{const r=createRecord();r.fields=[{tag:'225',ind1:'|',ind2:' ',subfields:[{code:'a',value:'Cible concours'},{code:'e',value:'fonction publique'}]},{tag:'410',ind1:' ',ind2:'0',subfields:[{code:'t',value:'Cible concours'}]}];const before=clone(r);assert(validate(r).some(x=>x.index===0&&x.severity==='error'));assert.throws(()=>encodeRecord(r));assert.equal(personalIndicatorRepairs(r).length,0);assert.deepEqual(r,before);for(const ind of ['0','1','2']){r.fields[0].ind1=ind;assert(!validate(r).some(x=>x.severity==='error'));assert(encodeRecord(r).length>0);}r.fields[0].ind2='0';assert(validate(r).some(x=>x.message.includes('deuxième indicateur')));});
+test('autres zones : indicateur de remplissage signalé sans remplacement',()=>{const r=createRecord();r.fields=[{tag:'999',ind1:' ',ind2:'|',subfields:[{code:'a',value:'Inchangée'}]}];assert(validate(r).some(x=>x.message.includes('remplissage')));assert.equal(r.fields[0].ind2,'|');});

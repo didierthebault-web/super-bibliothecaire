@@ -13,3 +13,13 @@ Le fichier corrigé remis au commanditaire conserve les trois notices et toutes 
 Ce correctif vise l’erreur observée sur la capture. Le nouvel essai dans l’instance Koha du commanditaire reste nécessaire pour attester l’import complet. Les avertissements sur 100$a et les particularités des données BnF sont distincts de cette correction.
 
 Référence : https://www.transition-bibliographique.fr/B700_fre (indicateurs et définition de $b ; mêmes règles de forme du nom pour 701/702).
+
+## Deuxième retour Koha : zone 225
+
+La nouvelle capture confirme 700/702 en blanc + 1, mais signale 225 avec un premier indicateur `|`. Il doit être choisi par le catalogueur : 0 (forme différente du point d’accès en 410), 1 (aucune forme de référence établie), 2 (forme identique au point d’accès en 410). La présence d’un 410 seule ne suffit pas à arbitrer la forme complète de la mention de collection.
+
+L’application bloque maintenant ce cas avant export et propose une liste de choix expliqués dans le formulaire 225. Elle ne déduit pas cette valeur et ne supprime aucune mention. Le deuxième indicateur de 225 doit être un blanc. Les indicateurs de remplissage `|` des autres zones sont aussi signalés comme à résoudre avant l’export destiné à Koha, sans prétendre établir un dictionnaire complet de tous les indicateurs UNIMARC.
+
+17 tests du moteur réussis. Recette navigateur étendue au blocage d’un ancien lot contenant 225, au choix explicite et à la validation après correction.
+
+Référence : https://www.transition-bibliographique.fr/B225_fre
