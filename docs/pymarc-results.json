@@ -1,0 +1,7 @@
+{
+  "library": "pymarc 5.4.0",
+  "records": 3,
+  "all_fields_equal": true,
+  "accents_equal": true,
+  "koha_import_tested": false
+}

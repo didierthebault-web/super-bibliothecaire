@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.openai/
+*.log
+tests/screenshots/
+docs/browser-results.json
+tests/pilote-bnf.mrc
+tests/bnf-*.json
+docs/faisabilite.json
