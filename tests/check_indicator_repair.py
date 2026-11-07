@@ -14,6 +14,10 @@ for old, new in zip(original, corrected):
         if a.tag in ['700', '701', '702'] and a.indicator2 == '|' and a.get('b'):
             a.indicator2 = '1'
             changes += 1
-        assert a.as_dict() == b.as_dict(), 'Une autre donnée a changé'
+        assert a.tag == b.tag
+        if a.is_control_field():
+            assert a.data == b.data, 'Une zone de contrôle a changé'
+        else:
+            assert a.indicators == b.indicators and a.subfields == b.subfields, 'Une autre donnée a changé'
     assert all(old.leader[i] == new.leader[i] for i in list(range(5, 10)) + [17,18,19,23])
 print(f'pymarc : {len(original)} notices, {changes} indicateurs corriges, autres donnees identiques')
