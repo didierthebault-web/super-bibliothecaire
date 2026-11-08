@@ -12,3 +12,6 @@ scripts/publish-github.cjs
 tests/browser-backup.json
 tests/browser-export.mrc
 docs/public-check.json
+
+# Local batch acceptance artifacts
+tests/batch-browser-export.mrc

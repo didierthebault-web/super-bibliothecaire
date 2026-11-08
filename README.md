@@ -18,7 +18,7 @@ Ouvrir http://127.0.0.1:8793. Ne pas ouvrir `index.html` directement en `file://
 npm test
 ```
 
-L’interface propose trois recherches (ISBN, ARK et Titre/Auteur/Date), la sélection humaine des éditions, la comparaison de deux résultats, la saisie manuelle, les trois vues de notice, le lot, les historiques et la sauvegarde/restauration JSON. Les illustrations sont les ressources originales fournies par le commanditaire.
+L’interface propose trois recherches unitaires (ISBN, ARK et Titre/Auteur/Date), le catalogage par lot de 100 ISBN maximum (collage, TXT/CSV, reprise, décisions humaines), la sélection humaine des éditions, la comparaison de deux résultats, la saisie manuelle, les trois vues de notice, le lot, les historiques et la sauvegarde/restauration JSON. Les illustrations sont les ressources originales fournies par le commanditaire.
 
 ## Profil fourni : champs nécessaires si disponibles
 
@@ -52,3 +52,9 @@ Extension pédagogique : cinq modules, 38 leçons théoriques, un glossaire et S
 ## Glossaire métier
 
 Entrée permanente après « Apprendre à cataloguer », route `#glossaire-metier`. Reprise fidèle des 131 fiches et sept domaines de Formations KOHA & BOKEH, recherche, alphabet, fiches et liens associés. [Provenance, comparaison intégrale et recette](docs/GLOSSAIRE-METIER.md). Aucun contenu source n’est réécrit ; les formations d’origine restent des liens externes explicites.
+
+## Catalogage par lot d’ISBN — V2.1
+
+La carte Par lot d’ISBN remplace la carte de couverture inactive. Les candidates temporaires restent séparées du panier existant et rejoignent l’éditeur après sélection explicite. Les sauvegardes V2 incluent les traitements ; les sauvegardes V1 restent restaurables.
+
+Voir [le guide, la migration et le rapport de recette](docs/V2-1-LOT-ISBN.md). Tests : `node tests/batch-isbn-browser.cjs`. Recette BnF réelle optionnelle : `node tests/batch-isbn-real.cjs` (serveur local démarré).
