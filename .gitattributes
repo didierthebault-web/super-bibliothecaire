@@ -1,0 +1,3 @@
+# Les copies amont sont conservées octet pour octet, y compris sous Windows.
+vendor/formations-koha-bokeh/** -text
+src/glossary/data/*.json -text
