@@ -1,0 +1,411 @@
+{
+  "live": true,
+  "date": "2026-11-08T15:44:06.177Z",
+  "retryPolicy": "1 tentative par page pour cette recette réseau ; défaut application : 3",
+  "measurements": [
+    {
+      "size": 10,
+      "distinct": 10,
+      "requests": 10,
+      "completed": 10,
+      "found": 9,
+      "multiple": 0,
+      "empty": 1,
+      "errors": 0,
+      "candidates": 9,
+      "uniqueNotices": 9,
+      "elapsedMs": 4185,
+      "resumeTested": false,
+      "status": "completed",
+      "details": [
+        {
+          "isbn": "9782825713525",
+          "total": 0,
+          "error": "",
+          "titles": []
+        },
+        {
+          "isbn": "9782757710708",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Sous les toits des cathédrales"
+          ]
+        },
+        {
+          "isbn": "9782917812907",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "La gestion d'une régie directe culturelle"
+          ]
+        },
+        {
+          "isbn": "9782744068102",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "On ne naît pas manager, on le devient"
+          ]
+        },
+        {
+          "isbn": "9782744068072",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "L'entreprise sereine"
+          ]
+        },
+        {
+          "isbn": "9782733904817",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Traité pratique de la diction française"
+          ]
+        },
+        {
+          "isbn": "9782709635684",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Le dico des dictionnaires"
+          ]
+        },
+        {
+          "isbn": "9782258148031",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Les 300 plus belles fautes à ne pas faire"
+          ]
+        },
+        {
+          "isbn": "9782035950284",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "15 minutes par jour pour jouer avec les mots"
+          ]
+        },
+        {
+          "isbn": "9782200617554",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Manuel d'études théâtrales"
+          ]
+        }
+      ]
+    },
+    {
+      "size": 20,
+      "distinct": 11,
+      "requests": 11,
+      "completed": 11,
+      "found": 10,
+      "multiple": 0,
+      "empty": 1,
+      "errors": 0,
+      "candidates": 10,
+      "uniqueNotices": 10,
+      "elapsedMs": 4433,
+      "resumeTested": false,
+      "status": "completed",
+      "details": [
+        {
+          "isbn": "9782825713525",
+          "total": 0,
+          "error": "",
+          "titles": []
+        },
+        {
+          "isbn": "9782757710708",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Sous les toits des cathédrales"
+          ]
+        },
+        {
+          "isbn": "9782917812907",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "La gestion d'une régie directe culturelle"
+          ]
+        },
+        {
+          "isbn": "9782744068102",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "On ne naît pas manager, on le devient"
+          ]
+        },
+        {
+          "isbn": "9782744068072",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "L'entreprise sereine"
+          ]
+        },
+        {
+          "isbn": "9782733904817",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Traité pratique de la diction française"
+          ]
+        },
+        {
+          "isbn": "9782709635684",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Le dico des dictionnaires"
+          ]
+        },
+        {
+          "isbn": "9782258148031",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Les 300 plus belles fautes à ne pas faire"
+          ]
+        },
+        {
+          "isbn": "9782035950284",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "15 minutes par jour pour jouer avec les mots"
+          ]
+        },
+        {
+          "isbn": "9782200617554",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Manuel d'études théâtrales"
+          ]
+        },
+        {
+          "isbn": "9780000000002",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Judith Rothchild"
+          ]
+        }
+      ]
+    },
+    {
+      "size": 50,
+      "distinct": 11,
+      "requests": 11,
+      "completed": 11,
+      "found": 10,
+      "multiple": 0,
+      "empty": 1,
+      "errors": 0,
+      "candidates": 10,
+      "uniqueNotices": 10,
+      "elapsedMs": 4442,
+      "resumeTested": false,
+      "status": "completed",
+      "details": [
+        {
+          "isbn": "9782825713525",
+          "total": 0,
+          "error": "",
+          "titles": []
+        },
+        {
+          "isbn": "9782757710708",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Sous les toits des cathédrales"
+          ]
+        },
+        {
+          "isbn": "9782917812907",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "La gestion d'une régie directe culturelle"
+          ]
+        },
+        {
+          "isbn": "9782744068102",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "On ne naît pas manager, on le devient"
+          ]
+        },
+        {
+          "isbn": "9782744068072",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "L'entreprise sereine"
+          ]
+        },
+        {
+          "isbn": "9782733904817",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Traité pratique de la diction française"
+          ]
+        },
+        {
+          "isbn": "9782709635684",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Le dico des dictionnaires"
+          ]
+        },
+        {
+          "isbn": "9782258148031",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Les 300 plus belles fautes à ne pas faire"
+          ]
+        },
+        {
+          "isbn": "9782035950284",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "15 minutes par jour pour jouer avec les mots"
+          ]
+        },
+        {
+          "isbn": "9782200617554",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Manuel d'études théâtrales"
+          ]
+        },
+        {
+          "isbn": "9780000000002",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Judith Rothchild"
+          ]
+        }
+      ]
+    },
+    {
+      "size": 100,
+      "distinct": 11,
+      "requests": 11,
+      "completed": 11,
+      "found": 10,
+      "multiple": 0,
+      "empty": 1,
+      "errors": 0,
+      "candidates": 10,
+      "uniqueNotices": 10,
+      "elapsedMs": 4098,
+      "resumeTested": true,
+      "status": "completed",
+      "details": [
+        {
+          "isbn": "9782825713525",
+          "total": 0,
+          "error": "",
+          "titles": []
+        },
+        {
+          "isbn": "9782757710708",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Sous les toits des cathédrales"
+          ]
+        },
+        {
+          "isbn": "9782917812907",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "La gestion d'une régie directe culturelle"
+          ]
+        },
+        {
+          "isbn": "9782744068102",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "On ne naît pas manager, on le devient"
+          ]
+        },
+        {
+          "isbn": "9782744068072",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "L'entreprise sereine"
+          ]
+        },
+        {
+          "isbn": "9782733904817",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Traité pratique de la diction française"
+          ]
+        },
+        {
+          "isbn": "9782709635684",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Le dico des dictionnaires"
+          ]
+        },
+        {
+          "isbn": "9782258148031",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Les 300 plus belles fautes à ne pas faire"
+          ]
+        },
+        {
+          "isbn": "9782035950284",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "15 minutes par jour pour jouer avec les mots"
+          ]
+        },
+        {
+          "isbn": "9782200617554",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Manuel d'études théâtrales"
+          ]
+        },
+        {
+          "isbn": "9780000000002",
+          "total": 1,
+          "error": "",
+          "titles": [
+            "Judith Rothchild"
+          ]
+        }
+      ]
+    }
+  ]
+}
