@@ -44,3 +44,7 @@ La BnF fournit parfois des labels décalés ou des données codées de longueur 
 Les tests navigateur requièrent Playwright et Chromium. `PLAYWRIGHT_MODULE` peut désigner le module installé localement pour `tests/browser.cjs`. La recette réelle `tests/feasibility.cjs` nécessite l’accès réseau BnF. La vérification indépendante nécessite Python avec `pymarc==5.4.0`, puis `python tests/check_pymarc.py`.
 
 Les données de travail restent propres au navigateur et à l’origine du site. Une sauvegarde JSON régulière est nécessaire avant d’effacer les données du navigateur. Les tests n’envoient aucune donnée personnelle à GitHub ; les notices de test BnF et les sauvegardes générées sont exclues du dépôt.
+
+## Apprendre à cataloguer
+
+Extension pédagogique : cinq modules, 38 leçons théoriques, un glossaire et Suzanne comme accompagnatrice. Aucun exercice ni évaluation. [Présentation, sources et rapport de non-régression](docs/FORMATION.md). La formation est indépendante des notices et du lot. Accès : rubrique « Apprendre à cataloguer » ou URL terminée par #apprendre.
