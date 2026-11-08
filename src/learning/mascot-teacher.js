@@ -1,0 +1,3 @@
+const folder='./assets/formation/';
+export const teacherImages={expliquer:'expliquer.webp',lire:'lire.webp',accueil:'accueil.webp',presenter:'presenter.webp','portrait-livre':'portrait-livre.webp',retenir:'retenir.webp','portrait-lecture':'portrait-lecture.webp'};
+export function MascotTeacher({message,escape,pose='portrait-lecture',hidden=false,large=false}){if(hidden)return '';return `<aside class="learn-teacher ${large?'learn-teacher-large':''}" aria-label="Le conseil de Super bibliothécaire"><img src="${folder+teacherImages[pose]}" alt="" ${large?'':'loading="lazy"'}><div><span>Suzanne, votre Super bibliothécaire</span><p>${escape(message)}</p></div></aside>`;}

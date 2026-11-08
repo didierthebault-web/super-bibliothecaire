@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-08T14:16:35.795Z",
+  "results": [
+    "Accueil pédagogique : 5 cartes et source",
+    "5 sommaires et 38 leçons, navigation suivante entre modules",
+    "Précédent et définition au clavier",
+    "Glossaire filtrable",
+    "Masquage de Suzanne, préférence persistante",
+    "Carte hommage du footer, ouverture et fermeture au clavier",
+    "Accueil et leçon à 390 px sans débordement",
+    "Notice, lot, historique et paramètres professionnels inchangés ; aucun appel BnF ; zéro erreur JS",
+    "Retour aux trois recherches disponibles et couverture V2 inactive"
+  ],
+  "errors": [],
+  "bnfCalls": 0
+}

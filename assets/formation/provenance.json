@@ -1,0 +1,93 @@
+[
+  {
+    "asset": "accueil.webp",
+    "originalSha256": "c4392f184b86e5a2e18353b3704c0ecd7e7c45dc339620263859778dfd3bcd2f",
+    "originalSize": [
+      1086,
+      1448
+    ],
+    "displayAssetSize": [
+      560,
+      747
+    ],
+    "operations": "redimensionnement proportionnel et encodage WebP sans perte ; aucun changement du personnage"
+  },
+  {
+    "asset": "expliquer.webp",
+    "originalSha256": "f5ee90e11fb18102f5f4c9d99263a9316677737079928439d3f3e960cec5ddbf",
+    "originalSize": [
+      1086,
+      1448
+    ],
+    "displayAssetSize": [
+      560,
+      747
+    ],
+    "operations": "redimensionnement proportionnel et encodage WebP sans perte ; aucun changement du personnage"
+  },
+  {
+    "asset": "lire.webp",
+    "originalSha256": "27eb5ce8e4751c921e9a4b3a33caffb02c805a47a23c2b8d150f76a200383534",
+    "originalSize": [
+      1086,
+      1448
+    ],
+    "displayAssetSize": [
+      560,
+      747
+    ],
+    "operations": "redimensionnement proportionnel et encodage WebP sans perte ; aucun changement du personnage"
+  },
+  {
+    "asset": "portrait-lecture.webp",
+    "originalSha256": "a899d58898bec1414cd30663a1f8269b82dfe7062a5ee375eef33959df984a22",
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "displayAssetSize": [
+      560,
+      560
+    ],
+    "operations": "redimensionnement proportionnel et encodage WebP sans perte ; aucun changement du personnage"
+  },
+  {
+    "asset": "portrait-livre.webp",
+    "originalSha256": "71fdbdfba1b59dddbe249e5df2b3046eb8479df03887d21f39344b29fb6e5113",
+    "originalSize": [
+      1199,
+      1312
+    ],
+    "displayAssetSize": [
+      560,
+      613
+    ],
+    "operations": "redimensionnement proportionnel et encodage WebP sans perte ; aucun changement du personnage"
+  },
+  {
+    "asset": "presenter.webp",
+    "originalSha256": "dbfaf15051923fb25c12a48240cca4ba5842f2ba37f6dd30dd3bfea199d721d5",
+    "originalSize": [
+      1086,
+      1448
+    ],
+    "displayAssetSize": [
+      560,
+      747
+    ],
+    "operations": "redimensionnement proportionnel et encodage WebP sans perte ; aucun changement du personnage"
+  },
+  {
+    "asset": "retenir.webp",
+    "originalSha256": "e1368923ed00ef131ce09a9f85ce9cac222d0c896cb80cc625bebdbc35b43407",
+    "originalSize": [
+      1274,
+      1234
+    ],
+    "displayAssetSize": [
+      560,
+      542
+    ],
+    "operations": "redimensionnement proportionnel et encodage WebP sans perte ; aucun changement du personnage"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "src/marc.js": "2d6a72ecdea3b717a9b592bf3ca48e4ec9f36d57fd3d03ff23a6c5c5a0307346",
+  "src/bnf.js": "4ce051fdacb4e711d1fba66eced208ca4e240f064a552e7b1767dd890cceefd4",
+  "src/storage.js": "48c947f7b9cfe0b78d58681bb76ef926a083597d0e47463f797d82c7e8027ca9",
+  "src/iso-reader.js": "fd892aa9af40868f95e543c0538cd62fd75c435f376d48156bc0d664c94ecae3",
+  "src/indicators.js": "757ff59fa7b0331ae466675f6a10df30a087b61e1ba535c2a8c6383abee978ac",
+  "src/profile.js": "3e06f0f667ab75e1c6bca679a0bd0981d8af61a047ab0e14897f2bb3e5574527"
+}
