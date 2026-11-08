@@ -48,3 +48,7 @@ Les données de travail restent propres au navigateur et à l’origine du site.
 ## Apprendre à cataloguer
 
 Extension pédagogique : cinq modules, 38 leçons théoriques, un glossaire et Suzanne comme accompagnatrice. Aucun exercice ni évaluation. [Présentation, sources et rapport de non-régression](docs/FORMATION.md). La formation est indépendante des notices et du lot. Accès : rubrique « Apprendre à cataloguer » ou URL terminée par #apprendre.
+
+## Glossaire métier
+
+Entrée permanente après « Apprendre à cataloguer », route `#glossaire-metier`. Reprise fidèle des 131 fiches et sept domaines de Formations KOHA & BOKEH, recherche, alphabet, fiches et liens associés. [Provenance, comparaison intégrale et recette](docs/GLOSSAIRE-METIER.md). Aucun contenu source n’est réécrit ; les formations d’origine restent des liens externes explicites.

@@ -1,0 +1,49 @@
+{
+  "repository": "didierthebault-web/formations-koha-bokeh",
+  "commit": "f01242c2bc03f222245fc43333df04191f448d50",
+  "retrieved": "2026-11-08",
+  "files": [
+    {
+      "path": "lib/glossary.json",
+      "blob": "3531ee7ad2fde06ac77c88bc7fb7a4b4c44e5f69",
+      "characters": 112553
+    },
+    {
+      "path": "lib/glossary-domains.json",
+      "blob": "84870f08178cefc4cac6604983b9ae5c6c51dc38",
+      "characters": 668
+    },
+    {
+      "path": "lib/glossary-sources.json",
+      "blob": "4ebb0779b690af2121a124a797821a9b344fc3d9",
+      "characters": 6002
+    },
+    {
+      "path": "lib/glossary-lessons.json",
+      "blob": "8218392b6ca14b3a3f89c0e1051f92c00351d6ff",
+      "characters": 16446
+    },
+    {
+      "path": "lib/glossary.ts",
+      "blob": "eb4b072ba0379f95fae172a47c9b94e01a47d148",
+      "characters": 1735
+    },
+    {
+      "path": "app/glossary.tsx",
+      "blob": "aff8f1499ee2eec215cbdf84f7b7810ef9946887",
+      "characters": 4428
+    },
+    {
+      "path": "app/glossary-entry.tsx",
+      "blob": "13f96151a820a6f7f1a4714f98caa7c5ff8399fd",
+      "characters": 5614
+    },
+    {
+      "path": "pages/check-glossary.mjs",
+      "blob": "93632273fd90934f9618d98a97073d0f434bf966",
+      "characters": 3129
+    }
+  ],
+  "entries": 131,
+  "domains": 7
+}

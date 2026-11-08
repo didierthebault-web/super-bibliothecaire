@@ -1,0 +1,85 @@
+{
+  "repository": "didierthebault-web/formations-koha-bokeh",
+  "sourceCommit": "f01242c2bc03f222245fc43333df04191f448d50",
+  "retrieved": "2026-11-08",
+  "files": [
+    {
+      "file": "glossary.json",
+      "sourceBlob": "3531ee7ad2fde06ac77c88bc7fb7a4b4c44e5f69",
+      "expectedSourceBlob": "3531ee7ad2fde06ac77c88bc7fb7a4b4c44e5f69",
+      "bytesIdentical": true,
+      "objectsIdentical": true,
+      "sha256": "480e3efb05c18cd62ce1c4ad5600d5cf4c6402c2d0f8f7c50e767646d493389d"
+    },
+    {
+      "file": "glossary-domains.json",
+      "sourceBlob": "84870f08178cefc4cac6604983b9ae5c6c51dc38",
+      "expectedSourceBlob": "84870f08178cefc4cac6604983b9ae5c6c51dc38",
+      "bytesIdentical": true,
+      "objectsIdentical": true,
+      "sha256": "619917cb874238d8a5a07d141afa30603c61a93105b997886f1a0976963bcad2"
+    },
+    {
+      "file": "glossary-sources.json",
+      "sourceBlob": "4ebb0779b690af2121a124a797821a9b344fc3d9",
+      "expectedSourceBlob": "4ebb0779b690af2121a124a797821a9b344fc3d9",
+      "bytesIdentical": true,
+      "objectsIdentical": true,
+      "sha256": "5adac700c9436f7231e57f9dfc87f8358f4892dfccc0095330c175132b709e04"
+    },
+    {
+      "file": "glossary-lessons.json",
+      "sourceBlob": "8218392b6ca14b3a3f89c0e1051f92c00351d6ff",
+      "expectedSourceBlob": "8218392b6ca14b3a3f89c0e1051f92c00351d6ff",
+      "bytesIdentical": true,
+      "objectsIdentical": true,
+      "sha256": "9ce21701dade5e016079bb95f076e31c278323eb369383999c704774b28a5b95"
+    }
+  ],
+  "upstreamFiles": [
+    {
+      "file": "lib/glossary.json",
+      "blobIdentical": true
+    },
+    {
+      "file": "lib/glossary-domains.json",
+      "blobIdentical": true
+    },
+    {
+      "file": "lib/glossary-sources.json",
+      "blobIdentical": true
+    },
+    {
+      "file": "lib/glossary-lessons.json",
+      "blobIdentical": true
+    },
+    {
+      "file": "lib/glossary.ts",
+      "blobIdentical": true
+    },
+    {
+      "file": "app/glossary.tsx",
+      "blobIdentical": true
+    },
+    {
+      "file": "app/glossary-entry.tsx",
+      "blobIdentical": true
+    },
+    {
+      "file": "pages/check-glossary.mjs",
+      "blobIdentical": true
+    }
+  ],
+  "differences": {
+    "removed": [],
+    "added": [],
+    "changed": []
+  },
+  "total": 131,
+  "domains": 7,
+  "aliases": 38,
+  "errors": [],
+  "unresolvedLessons": [],
+  "unresolvedSources": [],
+  "lossless": true
+}
