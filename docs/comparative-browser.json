@@ -1,0 +1,14 @@
+{
+  "simulatedBnf": true,
+  "officialSudocFixture": "261865854, réponse SRU réelle du 19/11/2026, enveloppe de session supprimée",
+  "results": [
+    "Parseur dédié : XML officiel réel, PPN/003 concordants, ISBN contrôlé, XML/DTD/diagnostic/conflit refusés ; zéro résultat distingué de l’indisponibilité",
+    "Deux sources indépendantes, aucune sélection implicite ; choix humain et comparaisons synthétique/UNIMARC par zone",
+    "Ajout direct au lot sans validation ; doublon inter-catalogues soumis à choix explicite, même PPN réutilisé, aucun écrasement",
+    "Qualité et CSV séparent source/méthode ; export mixte commun, original et 001/003/801 inchangés",
+    "Réinitialisation sans perte des notices et restauration JSON V2 avec provenance Sudoc complète",
+    "BnF en erreur ou vide : import Sudoc indépendant ; résultat vide réel séparé de CORS, historique sourcé",
+    "Résultats multiples sans choix automatique, pagination XML expliquée, mobile 390 px, aucun appel Sudoc ni proxy caché"
+  ],
+  "errors": []
+}

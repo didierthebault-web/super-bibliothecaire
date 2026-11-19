@@ -1,5 +1,5 @@
 import {clone,normalizeARK,summary,values} from './marc.js';
-export function isBnfRecord(record){const p=record?.provenance;return !!(p&&p.source==='BnF — SRU / UNIMARC'&&['isbn','ark','title','batch-isbn'].includes(p.method)&&Number.isFinite(Date.parse(p.retrievedAt))&&typeof p.originalXML==='string'&&/<(?:\w+:)?record\b/.test(p.originalXML)&&/<(?:\w+:)?leader\b/.test(p.originalXML)&&(!p.service||p.service==='bnf-sru'));}
+export function isBnfRecord(record){const p=record?.provenance;return !!(p&&p.source==='BnF — SRU / UNIMARC'&&['isbn','ark','title','batch-isbn','comparative'].includes(p.method)&&Number.isFinite(Date.parse(p.retrievedAt))&&typeof p.originalXML==='string'&&/<(?:\w+:)?record\b/.test(p.originalXML)&&/<(?:\w+:)?leader\b/.test(p.originalXML)&&(!p.service||p.service==='bnf-sru'));}
 export function sourceIdentity(r){if(!isBnfRecord(r))return null;try{return 'ark:'+normalizeARK(summary(r).ark);}catch{}const id=values(r,'001')[0];return id?'bnf-001:'+id:'xml:'+r.provenance.originalXML;}
 export function adoptCandidate(candidate,records,{duplicate=false,preferredId=null}={}){
   if(!isBnfRecord(candidate))throw Error('Seules les notices récupérées par le connecteur BnF peuvent rejoindre ce lot.');

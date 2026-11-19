@@ -1,0 +1,17 @@
+{
+  "parser": "pymarc 5.4.1",
+  "results": [
+    {
+      "file": "comparative-mixed.mrc",
+      "records": 2,
+      "allFieldsAndSubfieldsIdentical": true,
+      "semanticLeaderPositionsPreserved": true
+    },
+    {
+      "file": "comparative-real-mixed.mrc",
+      "records": 2,
+      "allFieldsAndSubfieldsIdentical": true,
+      "semanticLeaderPositionsPreserved": true
+    }
+  ]
+}
