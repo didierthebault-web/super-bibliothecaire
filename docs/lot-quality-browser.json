@@ -1,0 +1,13 @@
+{
+  "simulatedFixtures": true,
+  "results": [
+    "Deux onglets clavier, trois libellés exacts dans cartes/filtres/détails et infobulle accessible ; 3 notices du lot sur 4 conservées, aucune écriture",
+    "CSV complet UTF-8 : trois libellés contractuels, une ligne par notice du lot, téléchargement sans mutation ni historique d’export",
+    "Exploration des présences, doublons et provenances ; trois vues partagées, édition et retour conservant le filtre et actualisant les comptes",
+    "Les deux premières catégories exportent ensemble ; troisième catégorie explicitement exclue seulement après confirmation, lot intact",
+    "Options d’export, réinitialisation, lot vide sans faux taux, restauration V2 et affichage 390 px actualisés",
+    "Ajout dans un autre contexte détecté au retour de focus, sans mutation par l’analyse",
+    "Préférence de masquage de Suzanne respectée dans le nouvel onglet"
+  ],
+  "errors": []
+}
