@@ -1,3 +1,5 @@
+> Document historique du parcours V2.1 initial. Le parcours courant est décrit dans [SIMPLIFICATION-CATALOGAGE.md](SIMPLIFICATION-CATALOGAGE.md) : sélection BnF = ajout direct au lot, édition facultative.
+
 # Super Bibliothécaire V2.1 — catalogage par lot d’ISBN
 
 ## Parcours

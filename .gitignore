@@ -15,3 +15,5 @@ docs/public-check.json
 
 # Local batch acceptance artifacts
 tests/batch-browser-export.mrc
+
+.verification/

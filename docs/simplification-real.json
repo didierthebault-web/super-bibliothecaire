@@ -1,0 +1,88 @@
+{
+  "live": true,
+  "url": "http://127.0.0.1:8793/",
+  "date": "2026-11-19T08:36:21.500Z",
+  "cases": [
+    {
+      "mode": "isbn",
+      "criteria": {
+        "isbn": "9782759048991"
+      },
+      "resultCount": 1,
+      "id": "b32439f4-91de-438a-87ad-f6414de1b953",
+      "title": "200 questions concours de bibliothèques",
+      "documentaryIssues": [
+        {
+          "index": 29,
+          "severity": "error",
+          "message": "Zone 700 : deuxième indicateur « | » invalide ; choisir 0 (ordre direct) ou 1 (nom de famille). La présence de $b impose 1."
+        },
+        {
+          "index": 30,
+          "severity": "error",
+          "message": "Zone 702 : deuxième indicateur « | » invalide ; choisir 0 (ordre direct) ou 1 (nom de famille). La présence de $b impose 1."
+        },
+        {
+          "index": 19,
+          "severity": "error",
+          "message": "Zone 225 : choisissez le premier indicateur : 0 (différent du titre de référence en 410), 1 (aucune forme de référence établie), 2 (identique à la forme de référence en 410). Aucun choix automatique."
+        }
+      ]
+    },
+    {
+      "mode": "ark",
+      "criteria": {
+        "ark": "ark:/12148/cb45724568r"
+      },
+      "resultCount": 1,
+      "id": "c18cb825-e25c-4d82-990d-d9d5663ddbad",
+      "title": "Uzmo, penser avec son stylo",
+      "documentaryIssues": [
+        {
+          "index": 26,
+          "severity": "error",
+          "message": "Zone 700 : deuxième indicateur « | » invalide ; choisir 0 (ordre direct) ou 1 (nom de famille). La présence de $b impose 1."
+        }
+      ]
+    },
+    {
+      "mode": "title",
+      "criteria": {
+        "title": "La promesse de l’aube",
+        "author": "Romain Gary",
+        "date": "1960"
+      },
+      "resultCount": 2,
+      "id": "6065b667-0394-4445-a21f-22a7d051e095",
+      "title": "La Promesse de l'aube",
+      "documentaryIssues": [
+        {
+          "index": 18,
+          "severity": "error",
+          "message": "Zone 700 : deuxième indicateur « | » invalide ; choisir 0 (ordre direct) ou 1 (nom de famille). La présence de $b impose 1."
+        },
+        {
+          "index": 15,
+          "severity": "error",
+          "message": "Zone 225 : choisissez le premier indicateur : 0 (différent du titre de référence en 410), 1 (aucune forme de référence établie), 2 (identique à la forme de référence en 410). Aucun choix automatique."
+        }
+      ]
+    }
+  ],
+  "exported": 3,
+  "realBatch": {
+    "inputRows": 20,
+    "distinctISBNs": 10,
+    "notFound": 1,
+    "selected": 9,
+    "originalFieldsUnchanged": true,
+    "exported": 9
+  },
+  "originalFieldsUnchanged": true,
+  "resetPreservesRecords": true,
+  "resetPreservesHistory": true,
+  "learning": 5,
+  "glossary": 131,
+  "trainingPlatform": 4,
+  "errors": []
+}

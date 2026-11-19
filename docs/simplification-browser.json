@@ -1,0 +1,14 @@
+{
+  "simulatedSRU": true,
+  "results": [
+    "Saisie manuelle enregistrable sans validation, jamais ajoutée automatiquement",
+    "ISBN : choix humain, consultation/comparaison sans ajout, ajout immédiat sans éditeur ni correction des indicateurs",
+    "ARK et Titre/Auteur/Date : même ajout direct ; notice identique réutilisée sans copie accidentelle",
+    "Duplication explicite, trois vues, édition facultative conservant lot/provenance et original BnF consultable",
+    "Profil non bloquant, doublons exportables sans case obligatoire, export relu et originaux inchangés",
+    "Réinitialisation confirmée et idempotente : notices/historique/paramètres/traitements conservés, notice réutilisable",
+    "Sauvegarde/restauration V2, réparation tracée, rapport d’échec et export partiel soumis à confirmation ; aucune suppression",
+    "20 ISBN : recherche et sélection humaine ajoutant 20 brouillons au lot, export commun sans éditeur et affichage mobile"
+  ],
+  "errors": []
+}

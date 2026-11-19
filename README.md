@@ -18,7 +18,7 @@ Ouvrir http://127.0.0.1:8793. Ne pas ouvrir `index.html` directement en `file://
 npm test
 ```
 
-L’interface propose trois recherches unitaires (ISBN, ARK et Titre/Auteur/Date), le catalogage par lot de 100 ISBN maximum (collage, TXT/CSV, reprise, décisions humaines), la sélection humaine des éditions, la comparaison de deux résultats, la saisie manuelle, les trois vues de notice, le lot, les historiques et la sauvegarde/restauration JSON. Les illustrations sont les ressources originales fournies par le commanditaire.
+L’interface propose trois recherches unitaires (ISBN, ARK et Titre/Auteur/Date), le catalogage par lot de 100 ISBN maximum (collage, TXT/CSV, reprise, décisions humaines), la sélection humaine ajoutant directement les notices BnF au lot, la comparaison de deux résultats, la saisie manuelle, les trois vues de notice, le lot, les historiques et la sauvegarde/restauration JSON. Les illustrations sont les ressources originales fournies par le commanditaire.
 
 ## Profil fourni : champs nécessaires si disponibles
 
@@ -55,6 +55,12 @@ Entrée permanente après « Apprendre à cataloguer », route `#glossaire-metie
 
 ## Catalogage par lot d’ISBN — V2.1
 
-La carte Par lot d’ISBN remplace la carte de couverture inactive. Les candidates temporaires restent séparées du panier existant et rejoignent l’éditeur après sélection explicite. Les sauvegardes V2 incluent les traitements ; les sauvegardes V1 restent restaurables.
+La carte Par lot d’ISBN remplace la carte de couverture inactive. Les candidates temporaires restent séparées du panier existant ; une sélection explicite les enregistre et les ajoute immédiatement au lot. L’éditeur reste facultatif. Les sauvegardes V2 incluent les traitements ; les sauvegardes V1 restent restaurables.
 
 Voir [le guide, la migration et le rapport de recette](docs/V2-1-LOT-ISBN.md). Tests : `node tests/batch-isbn-browser.cjs`. Recette BnF réelle optionnelle : `node tests/batch-isbn-real.cjs` (serveur local démarré).
+
+## Parcours simplifié — novembre 2026
+
+Les notices BnF choisies rejoignent directement le lot, sans validation métier obligatoire. Les doublons sont informatifs. « Réinitialiser le lot » retire les notices du panier sans les supprimer. L’export prépare des copies techniques et trace les seules adaptations autorisées ; un export partiel requiert une confirmation.
+
+Voir [les règles, réparations et recettes](docs/SIMPLIFICATION-CATALOGAGE.md).
