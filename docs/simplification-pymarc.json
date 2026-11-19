@@ -1,0 +1,27 @@
+[
+  {
+    "file": "tests/browser-export.mrc",
+    "records": 3,
+    "fieldsAndAccentsIdentical": true
+  },
+  {
+    "file": "tests/screenshots/partial-export.mrc",
+    "records": 2,
+    "fieldsAndAccentsIdentical": true
+  },
+  {
+    "file": "tests/screenshots/direct-batch-20.mrc",
+    "records": 20,
+    "fieldsAndAccentsIdentical": true
+  },
+  {
+    "file": "tests/screenshots/real-direct.mrc",
+    "records": 3,
+    "fieldsAndAccentsIdentical": true
+  },
+  {
+    "file": "tests/screenshots/real-batch-20.mrc",
+    "records": 9,
+    "fieldsAndAccentsIdentical": true
+  }
+]

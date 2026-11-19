@@ -3,14 +3,14 @@
   "results": [
     "Migration réelle IndexedDB V1→V2 : notice, lot, historique et paramètres strictement préservés",
     "Déclenchement explicite, invalides exclus, doublon dédupliqué, pause/rechargement/reprise, retry 503, aucun résultat et ambiguïté sans sélection automatique",
-    "Comparaison, choix humain, éditeur existant, validation et ajout groupé au panier existant sans écrasement",
-    "Correspondance avec notice locale signalée ; refus explicite de créer un doublon respecte le stock",
-    "Tableau mobile sans débordement ; export .mrc réel du panier mixte par le sérialiseur et le second parseur existants",
+    "Comparaison, choix humain ajoutant immédiatement au lot, édition facultative et panier conservé",
+    "Correspondance locale signalée ; sélection identique réutilisée sans copie accidentelle",
+    "Tableau mobile sans débordement ; export partiel explicite du panier mixte, ancienne saisie manuelle conservée hors fichier BnF",
     "CSV local avec guillemets et séparateur : aperçu et choix de colonne obligatoires",
     "Sauvegarde V2 complète restaurable et ancienne sauvegarde V1 restaurée sans perte ni reliquat de traitement",
     "Charges simulées 20/50/100 ISBN distincts : file réellement exécutée, résultats persistés et données professionnelles strictement inchangées",
     "Affichage réel des 100 lignes après rechargement, également sans débordement de page sur mobile",
-    "Ajout groupé refusé avec profil actif modifié dans un autre onglet : relecture transactionnelle des paramètres",
+    "Ajout au lot BnF indépendant du profil changé dans un autre onglet",
     "Protection inter-onglets : un second orchestrateur ne peut pas acquérir le verrou actif",
     "Restauration V1 pendant requête en cours : réponse tardive refusée et ancien panier restauré intact",
     "Échec synchrone de transaction et sauvegarde malformée : aucun effacement partiel des données existantes"
@@ -28,7 +28,7 @@
       "candidates": 20,
       "distinctArks": 1,
       "withoutArk": 0,
-      "elapsedMs": 84
+      "elapsedMs": 137
     },
     {
       "size": 50,
@@ -42,7 +42,7 @@
       "candidates": 50,
       "distinctArks": 1,
       "withoutArk": 0,
-      "elapsedMs": 249
+      "elapsedMs": 335
     },
     {
       "size": 100,
@@ -56,7 +56,7 @@
       "candidates": 100,
       "distinctArks": 1,
       "withoutArk": 0,
-      "elapsedMs": 784
+      "elapsedMs": 903
     }
   ],
   "calls": [

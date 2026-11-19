@@ -1,0 +1,7 @@
+import {prepareRecord} from './export-technical.js';
+import {isBnfRecord} from './bnf-provenance.js';
+import {encodeBatch} from './marc.js';
+import {readISO2709} from './iso-reader.js';
+export function createExportPlan(records,options={}){const date=new Date().toISOString(),ready=[],excluded=[];const title=r=>{try{return r.fields.find(f=>f?.tag==='200')?.subfields?.find(s=>s?.code==='a')?.value||'Sans titre';}catch{return 'Sans titre';}};for(const original of records){try{if(!isBnfRecord(original))throw Error('Origine BnF non attestée par les métadonnées du connecteur.');const prepared=prepareRecord(original,{...options,date});ready.push({id:original.id,...prepared});}catch(e){excluded.push({id:original.id,title:title(original),message:e.message});}}return {date,options,ready,excluded};}
+export function serializePlan(plan){if(!plan.ready.length)throw Error('Aucune notice techniquement sérialisable. Consultez le rapport.');const expected=plan.ready.map(x=>x.record),bytes=encodeBatch(expected),read=readISO2709(bytes);if(read.length!==expected.length||JSON.stringify(read.map(r=>({leader:r.leader,fields:r.fields})))!==JSON.stringify(expected.map(r=>({leader:r.leader,fields:r.fields}))))throw Error('Échec de la relecture indépendante : téléchargement annulé.');return bytes;}
+export function exportReport(plan){return {date:plan.date,options:plan.options,exportedIds:plan.ready.map(r=>r.id),excluded:plan.excluded,repairs:plan.ready.flatMap(r=>r.repairs)};}
