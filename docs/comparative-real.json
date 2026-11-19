@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-19T15:58:33.813Z",
+  "base": "http://127.0.0.1:8793/",
+  "simulated": false,
+  "transport": "BnF fetch navigateur ; Sudoc réponse officielle téléchargée côté Node puis import local explicite",
+  "cases": [
+    {
+      "isbn": "9782210064782",
+      "http": 200,
+      "sudocTotal": 0,
+      "ppns": [],
+      "bnf": [
+        "BnF",
+        "Aucune notice"
+      ]
+    },
+    {
+      "isbn": "9782759048991",
+      "http": 200,
+      "sudocTotal": 1,
+      "ppns": [
+        "261865854"
+      ],
+      "bnf": [
+        "BnF",
+        "Notice trouvée · 1 résultat(s)",
+        "200 questions concours de bibliothèques",
+        "Schietecatte, Valérie · Studyrama ; Evoluprint · impr. 2022",
+        "1 vol. (539 p.) ; ill. ; 24 cm",
+        "Collection : Cible concours",
+        "ISBN : 978-2-7590-4899-1 · ARK / 001 : https://catalogue.bnf.fr/ark:/12148/cb47040491h",
+        "BnF — SRU / UNIMARC · Connecteur BnF · 19/11/2026 16:58:34",
+        "Voir la notice",
+        "Sélectionner pour comparer"
+      ]
+    }
+  ],
+  "referenceArk": {
+    "total": 1,
+    "identifiers": [
+      "https://catalogue.bnf.fr/ark:/12148/cb435835982"
+    ]
+  },
+  "mandatorySudoc": "0 résultat réel : aucun PPN inventé, comparaison et export Sudoc de cet ISBN impossibles",
+  "mixedExport": {
+    "count": 2,
+    "catalogs": [
+      "Sudoc — Abes / UNIMARC",
+      "BnF — SRU / UNIMARC"
+    ],
+    "sourceIdentifiers": [
+      "261865854",
+      "https://catalogue.bnf.fr/ark:/12148/cb47040491h"
+    ],
+    "originalsUnchanged": true
+  }
+}
