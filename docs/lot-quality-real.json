@@ -1,0 +1,198 @@
+{
+  "liveBnF": true,
+  "url": "http://127.0.0.1:8793/",
+  "date": "2026-11-19T09:05:40.601Z",
+  "method": "Trois notices BnF réelles non modifiées ; copies explicitement répétées pour les charges 20/50/100, aucun catalogue utilisateur consulté",
+  "titles": [
+    "200 questions concours de bibliothèques",
+    "Uzmo, penser avec son stylo",
+    "La Promesse de l'aube"
+  ],
+  "results": [
+    {
+      "size": 3,
+      "underlyingRealSources": 3,
+      "copiesIntentional": false,
+      "total": 3,
+      "technical": {
+        "direct": 0,
+        "prepared": 3,
+        "blocked": 0
+      },
+      "duplicateGroups": 0,
+      "duplicateNotices": 0,
+      "provenance": [
+        {
+          "method": "isbn",
+          "count": 1
+        },
+        {
+          "method": "ark",
+          "count": 1
+        },
+        {
+          "method": "title",
+          "count": 1
+        },
+        {
+          "method": "batch-isbn",
+          "count": 0
+        },
+        {
+          "method": "cover",
+          "count": 0
+        },
+        {
+          "method": "other",
+          "count": 0
+        },
+        {
+          "method": "unknown",
+          "count": 0
+        }
+      ],
+      "engineElapsedMs": 5,
+      "csvRows": 3,
+      "dataUnchanged": true
+    },
+    {
+      "size": 20,
+      "underlyingRealSources": 3,
+      "copiesIntentional": true,
+      "total": 20,
+      "technical": {
+        "direct": 0,
+        "prepared": 20,
+        "blocked": 0
+      },
+      "duplicateGroups": 5,
+      "duplicateNotices": 20,
+      "provenance": [
+        {
+          "method": "isbn",
+          "count": 7
+        },
+        {
+          "method": "ark",
+          "count": 7
+        },
+        {
+          "method": "title",
+          "count": 6
+        },
+        {
+          "method": "batch-isbn",
+          "count": 0
+        },
+        {
+          "method": "cover",
+          "count": 0
+        },
+        {
+          "method": "other",
+          "count": 0
+        },
+        {
+          "method": "unknown",
+          "count": 0
+        }
+      ],
+      "engineElapsedMs": 20,
+      "csvRows": 20,
+      "dataUnchanged": true
+    },
+    {
+      "size": 50,
+      "underlyingRealSources": 3,
+      "copiesIntentional": true,
+      "total": 50,
+      "technical": {
+        "direct": 0,
+        "prepared": 50,
+        "blocked": 0
+      },
+      "duplicateGroups": 5,
+      "duplicateNotices": 50,
+      "provenance": [
+        {
+          "method": "isbn",
+          "count": 17
+        },
+        {
+          "method": "ark",
+          "count": 17
+        },
+        {
+          "method": "title",
+          "count": 16
+        },
+        {
+          "method": "batch-isbn",
+          "count": 0
+        },
+        {
+          "method": "cover",
+          "count": 0
+        },
+        {
+          "method": "other",
+          "count": 0
+        },
+        {
+          "method": "unknown",
+          "count": 0
+        }
+      ],
+      "engineElapsedMs": 35,
+      "csvRows": 50,
+      "dataUnchanged": true
+    },
+    {
+      "size": 100,
+      "underlyingRealSources": 3,
+      "copiesIntentional": true,
+      "total": 100,
+      "technical": {
+        "direct": 0,
+        "prepared": 100,
+        "blocked": 0
+      },
+      "duplicateGroups": 5,
+      "duplicateNotices": 100,
+      "provenance": [
+        {
+          "method": "isbn",
+          "count": 34
+        },
+        {
+          "method": "ark",
+          "count": 33
+        },
+        {
+          "method": "title",
+          "count": 33
+        },
+        {
+          "method": "batch-isbn",
+          "count": 0
+        },
+        {
+          "method": "cover",
+          "count": 0
+        },
+        {
+          "method": "other",
+          "count": 0
+        },
+        {
+          "method": "unknown",
+          "count": 0
+        }
+      ],
+      "engineElapsedMs": 73,
+      "csvRows": 100,
+      "dataUnchanged": true
+    }
+  ],
+  "errors": []
+}

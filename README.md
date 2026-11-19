@@ -64,3 +64,9 @@ Voir [le guide, la migration et le rapport de recette](docs/V2-1-LOT-ISBN.md). T
 Les notices BnF choisies rejoignent directement le lot, sans validation métier obligatoire. Les doublons sont informatifs. « Réinitialiser le lot » retire les notices du panier sans les supprimer. L’export prépare des copies techniques et trace les seules adaptations autorisées ; un export partiel requiert une confirmation.
 
 Voir [les règles, réparations et recettes](docs/SIMPLIFICATION-CATALOGAGE.md).
+
+## Qualité du lot
+
+Dans Lot de notices, l’onglet Qualité du lot présente les informations renseignées, les identifiants partagés, la provenance et la capacité technique d’export. Les cartes ouvrent les notices correspondantes. Un rapport CSV reprend le lot complet ; aucune observation ne bloque le catalogage ou l’export. Les trois catégories techniques utilisent les mêmes libellés et les mêmes règles que l’export MARC.
+
+Voir [les règles et le rapport de recette](docs/QUALITE-LOT.md).
